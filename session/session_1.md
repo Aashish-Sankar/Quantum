@@ -118,7 +118,7 @@ A qubit's state can be visualized on the **Bloch Sphere**, a unit sphere where:
 * The poles represent the classical states $|0\rangle$ and $|1\rangle$.
 * Any point on the surface corresponds to a valid qubit state.
 
-<div align="center"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bloch_sphere.svg/1920px-Bloch_sphere.svg.png" alt="Bloch Sphere" style="max-width: 200px; width: 100%; height: auto; margin: 1em 0;"> 
+<div align="center"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bloch_sphere.svg/1920px-Bloch_sphere.svg.png" alt="Bloch Sphere" style="width: 200px; margin: 1em 0;"> 
 <div><em>The Bloch Sphere representation of a single qubit</em></div> </div>
 
 This visualization helps understand quantum operations—**quantum gates** like the Hadamard (H), Pauli-X/Y/Z, and rotation gates correspond to rotations around axes of the sphere.
