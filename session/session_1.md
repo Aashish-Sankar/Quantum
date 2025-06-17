@@ -188,7 +188,6 @@ This is a point on the **Bloch Sphere**, where:
 
 Here's the corrected and properly formatted version:
 
----
 
 ### Quantum Gates: Logic in the Quantum Realm
 
@@ -198,11 +197,10 @@ Quantum computation proceeds by applying **quantum gates**—unitary operations 
 
 | **Gate**         | **Matrix**                                                                 | **Effect**                                       |
 |------------------|------------------------------------------------------------------------------|--------------------------------------------------|
-| **X** (NOT)      | <span>$$\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$$</span>                | Bit flip: <span>$$\ket{0} \leftrightarrow \ket{1}$$</span>      |
-| **H** (Hadamard) | <span>$$\frac{1}{\sqrt{2}}\begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}$$</span> | Creates superposition                        |
-| **Z**            | <span>$$\begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}$$</span>               | Phase flip                                       |
-| **R($\theta$)**  | <span>$$\begin{bmatrix} 1 & 0 \\ 0 & e^{i\theta} \end{bmatrix}$$</span>      | Adds phase <span>$$\theta$$</span>               |
-
+| **X** (NOT)      | $\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$                | Bit flip: $\|0\rangle \rightarrow \|1\rangle$, $\|1\rangle \rightarrow \|0\rangle$      |
+| **H** (Hadamard) | $\frac{1}{\sqrt{2}}\begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}$ | Creates superposition: $\|0\rangle \rightarrow \frac{1}{\sqrt{2}}(\|0\rangle + \|1\rangle)$, $\|1\rangle \rightarrow \frac{1}{\sqrt{2}}(\|0\rangle - \|1\rangle)$                        |
+| **Z**            | $\begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}$               | Phase flip: $\|0\rangle \rightarrow \|0\rangle$, $\|1\rangle \rightarrow -\|1\rangle$                                       |
+| **R($\theta$)**  | $\begin{bmatrix} 1 & 0 \\ 0 & e^{i\theta} \end{bmatrix}$      | Adds phase $\theta$: $\|0\rangle \rightarrow \|0\rangle$, $\|1\rangle \rightarrow e^{i\theta}\|1\rangle$               |
 
 #### Applying Gates
 
