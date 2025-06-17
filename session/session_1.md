@@ -207,15 +207,15 @@ Quantum computation proceeds by applying **quantum gates**—unitary operations 
 
 * **Hadamard Gate on** $|0\rangle$:
 
-  $$
+  $
   H|0\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) = |+\rangle
-  $$
+  $
 
 * **X Gate on** $|1\rangle$:
 
-  $$
+  $
   X|1\rangle = |0\rangle
-  $$
+  $
 
 These quantum gates manipulate qubit states in ways analogous to classical logic gates—but operate using **complex amplitudes** and **phases**, enabling phenomena like **superposition** and **entanglement**.
 
