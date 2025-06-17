@@ -196,26 +196,27 @@ Quantum computation proceeds by applying **quantum gates**—unitary operations 
 
 #### **1-Qubit Gates (on the Bloch Sphere)**
 
-| Gate             | Matrix                                                             | Effect                                          |
-| ---------------- | ------------------------------------------------------------------ | ----------------------------------------------- | 
-| **X** (NOT)      | $\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$                     | Bit flip: ( 0\rangle \leftrightarrow 1\rangle ) |
-| **H** (Hadamard) | $\frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}$ | Creates superposition                           | 
-| **Z**            | $\begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}$                    | Phase flip                                      |
-| **R(θ)**         | $\begin{bmatrix} 1 & 0 \\ 0 & e^{i\theta} \end{bmatrix}$           | Adds phase $\theta$                             |  
+| **Gate**         | **Matrix**                                                         | **Effect**                                                    |
+| ---------------- | ------------------------------------------------------------------ | ------------------------------------------------------------- |
+| **X** (NOT)      | $\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$                     | Bit flip: $\lvert 0 \rangle \leftrightarrow \lvert 1 \rangle$ |
+| **H** (Hadamard) | $\frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}$ | Creates superposition                                         |
+| **Z**            | $\begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}$                    | Phase flip                                                    |
+| **$R(\theta)$**  | $\begin{bmatrix} 1 & 0 \\ 0 & e^{i\theta} \end{bmatrix}$           | Adds phase $\theta$                                           |
+
 
 #### **Applying Gates**
 
 * **Hadamard Gate on** $|0\rangle$:
 
-  $
+  $$
   H|0\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) = |+\rangle
-  $
+  $$
 
 * **X Gate on** $|1\rangle$:
 
-  $
+  $$
   X|1\rangle = |0\rangle
-  $
+  $$
 
 These quantum gates manipulate qubit states in ways analogous to classical logic gates—but operate using **complex amplitudes** and **phases**, enabling phenomena like **superposition** and **entanglement**.
 
