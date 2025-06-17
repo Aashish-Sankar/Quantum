@@ -1,4 +1,4 @@
-# A Long Story of Quantum Physics and Quantum Computing
+# A Story of Quantum Physics and Quantum Computing
 
 ## Part I: The Birth of a Quantum World
 
