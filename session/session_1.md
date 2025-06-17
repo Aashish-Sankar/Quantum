@@ -36,7 +36,7 @@ Over the next few decades, quantum ideas blossomed, giving rise to a new, revolu
 
   Mathematically, this is represented as:
 
-  $\Delta x \cdot \Delta p \geq \frac{\hbar}{2}$
+  $\Delta x \cdot \Delta p \geq \frac{\h}{2\pi$}$
 
   Where $\Delta x$ is the uncertainty in position, $\Delta p$ is the uncertainty in momentum, and $\hbar$ is the reduced Planck's constant ($h/2\pi$). This means the more precisely you know a particle's position, the less precisely you can know its momentum, and vice versa. It's not a limitation of our instruments, but a fundamental feature of nature.
 
