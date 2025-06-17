@@ -138,6 +138,224 @@ Example: The Bell state $|Φ^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rang
 
 These entangled states enable **quantum teleportation**, **quantum key distribution**, and **quantum error correction**.
 
+### The Computational Limits of Classical Physics
+
+As we saw, simulating quantum systems on classical computers quickly becomes intractable. The core reason is **state space explosion**: for every qubit added, the number of complex amplitudes doubles. This exponential growth stems from the **tensor product** structure of quantum states.
+
+If a classical bit string of \$n\$ bits has \$2^n\$ possible values, a quantum system of \$n\$ qubits doesn’t just represent *one* of these—it exists in a superposition of *all* \$2^n\$ states:
+
+$$
+|\psi\rangle = \sum_{i=0}^{2^n - 1} \alpha_i |i\rangle
+$$
+
+Where each \$|i\rangle\$ is a basis state (like \$|000\rangle\$, \$|101\rangle\$, etc.), and \$\alpha\_i\$ are complex amplitudes such that:
+
+$$
+\sum_{i=0}^{2^n - 1} |\alpha_i|^2 = 1
+$$
+
+This exponential encoding is what gives quantum computers their potential power—but also their fragility.
+
+---
+
+### Qubits, Superposition, and the Bloch Sphere
+
+Recall that a qubit is represented as:
+
+$$
+|\psi\rangle = \alpha |0\rangle + \beta |1\rangle
+$$
+
+Where:
+
+* \$\alpha, \beta \in \mathbb{C}\$ (complex numbers)
+* \$|\alpha|^2 + |\beta|^2 = 1\$
+
+We can express this using real angles:
+
+$$
+|\psi\rangle = \cos(\theta/2) |0\rangle + e^{i\phi} \sin(\theta/2) |1\rangle
+$$
+
+This is a point on the **Bloch Sphere**, where:
+
+* \$\theta\$ is the angle from the north pole,
+* \$\phi\$ is the phase angle around the equator.
+
+**Example**:
+
+* The state \$|+\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)\$ corresponds to a point on the equator (\$\theta = \pi/2\$, \$\phi = 0\$).
+
+---
+
+### Quantum Gates: Logic in the Quantum Realm
+
+Quantum computation proceeds by applying **quantum gates**—unitary operations (matrices \$U\$ where \$U^\dagger U = I\$)—to qubits.
+
+#### 1-Qubit Gates (on Bloch Sphere):
+
+| Gate             | Matrix                                                              | Effect                |                          |            |
+| ---------------- | ------------------------------------------------------------------- | --------------------- | ------------------------ | ---------- |
+| **X** (NOT)      | \$\begin{bmatrix} 0 & 1 \ 1 & 0 \end{bmatrix}\$                     | Flip: \$              | 0\rangle \leftrightarrow | 1\rangle\$ |
+| **H** (Hadamard) | \$\frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \ 1 & -1 \end{bmatrix}\$ | Creates superposition |                          |            |
+| **Z**            | \$\begin{bmatrix} 1 & 0 \ 0 & -1 \end{bmatrix}\$                    | Phase flip            |                          |            |
+| **R(θ)**         | \$\begin{bmatrix} 1 & 0 \ 0 & e^{iθ} \end{bmatrix}\$                | Adds phase            |                          |            |
+
+#### Applying Gates:
+
+* Applying **H** to \$|0\rangle\$:
+
+  $$
+  H|0\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) = |+\rangle
+  $$
+
+* Apply **X** to \$|1\rangle\$:
+
+  $$
+  X|1\rangle = |0\rangle
+  $$
+
+These gates manipulate qubit states like classical logic gates manipulate bits—but with complex amplitudes and phases.
+
+---
+
+### Multiple Qubits: Entanglement and the Tensor Product
+
+Quantum states of multiple qubits are constructed via the **tensor product**:
+
+For example:
+
+$$
+|0\rangle \otimes |1\rangle = |01\rangle
+$$
+
+And a general 2-qubit state:
+
+$$
+|\psi\rangle = \alpha_{00}|00\rangle + \alpha_{01}|01\rangle + \alpha_{10}|10\rangle + \alpha_{11}|11\rangle
+$$
+
+Where \$\sum |\alpha\_{ij}|^2 = 1\$.
+
+#### Entangled States:
+
+A state is **entangled** if it cannot be written as a tensor product of two individual qubit states.
+
+Example: **Bell State**
+
+$$
+|\Phi^+\rangle = \frac{1}{\sqrt{2}} (|00\rangle + |11\rangle)
+$$
+
+This is entangled—measure one qubit, and you instantly know the other.
+
+---
+
+### Quantum Circuits: Composing Computation
+
+Quantum algorithms are built from **quantum circuits**, sequences of gates applied to qubits.
+
+Example: Creating a Bell state:
+
+1. Start with \$|00\rangle\$
+2. Apply Hadamard gate to the first qubit: \$H \otimes I\$
+3. Apply **CNOT** (Controlled-NOT) gate
+
+CNOT:
+
+$$
+\text{CNOT}(|a, b\rangle) = |a, a \oplus b\rangle
+$$
+
+Resulting state:
+
+$$
+\frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)
+$$
+
+This simple circuit creates entanglement—a vital resource in quantum computation.
+
+---
+
+### Measurement: Probabilistic Output
+
+Quantum computation ends with **measurement**, collapsing the wavefunction.
+
+For a qubit in:
+
+$$
+|\psi\rangle = \alpha|0\rangle + \beta|1\rangle
+$$
+
+The measurement outcome is:
+
+* \$|0\rangle\$ with probability \$|\alpha|^2\$
+* \$|1\rangle\$ with probability \$|\beta|^2\$
+
+Once measured, the system irreversibly collapses to the observed state.
+
+---
+
+### Reversibility and Unitarity
+
+All quantum gates are **reversible**. Unlike classical gates (e.g., AND/OR), no information is lost.
+
+Mathematically:
+
+* Gates are **unitary**: \$U^\dagger U = I\$
+* This ensures total probability stays 1
+
+Quantum computing is **information-preserving**—a crucial contrast with dissipative classical circuits.
+
+---
+
+### A Note on Complexity Classes
+
+Quantum algorithms can solve problems in **BQP** (Bounded-error Quantum Polynomial time), a class that includes:
+
+* Some problems in **P** (like database search, with Grover’s)
+* Some problems believed to be outside **P** (like factoring, with Shor’s)
+
+It's not yet proven that BQP is strictly larger than P, but it is widely believed to be.
+
+---
+
+### The Quantum Fourier Transform (QFT)
+
+A core subroutine in many quantum algorithms, especially Shor’s.
+
+Given a state:
+
+$$
+|x\rangle = |x_0 x_1 \dots x_{n-1}\rangle
+$$
+
+The QFT maps:
+
+$$
+|x\rangle \rightarrow \frac{1}{\sqrt{2^n}} \sum_{k=0}^{2^n-1} e^{2\pi i xk / 2^n} |k\rangle
+$$
+
+It’s like the classical DFT (Discrete Fourier Transform), but on a quantum superposition.
+
+QFT can be done with \$O(n^2)\$ gates—exponentially faster than the classical DFT for many inputs.
+
+---
+
+### Quantum Speedups: Why It Matters
+
+Let’s compare classical vs quantum:
+
+| Problem                    | Classical   | Quantum                    |
+| -------------------------- | ----------- | -------------------------- |
+| Factoring (Shor)           | Exponential | Polynomial                 |
+| Database Search (Grover)   | \$O(N)\$    | \$O(\sqrt{N})\$            |
+| Simulating Quantum Physics | Exponential | Polynomial (in some cases) |
+
+These aren't just faster—they unlock **previously inaccessible** problems.
+
+---
+
 ## Part V: A Universal Truth
 
 ### Will Aliens Have Computers?
