@@ -196,12 +196,12 @@ Quantum computation proceeds by applying **quantum gates**—unitary operations 
 
 #### 1-Qubit Gates (on the Bloch Sphere)
 
-| **Gate**         | **Matrix**                                                         | **Effect**                                         | 
-| ---------------- | ------------------------------------------------------------------ | -------------------------------------------------- | 
-| **X** (NOT)      | $\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$                     | Bit flip: ( $0\rangle \leftrightarrow   1\rangle$ )|
-| **H** (Hadamard) | $\frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}$ | Creates superposition                              |
-| **Z**            | $\begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}$                    | Phase flip                                         |
-| **R(\theta)**    | $\begin{bmatrix} 1 & 0 \\ 0 & e^{i\theta} \end{bmatrix}$           | Adds phase $\theta$                                |
+| **Gate**         | **Matrix**                                                             | **Effect**                                         | 
+| ---------------- | ---------------------------------------------------------------------- | -------------------------------------------------- | 
+| **X** (NOT)      | $$ \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix} $$                     | Bit flip: ( $0\rangle \leftrightarrow   1\rangle$ )|
+| **H** (Hadamard) | $$ \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix} $$ | Creates superposition                              |
+| **Z**            | $$ \begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix} $$                    | Phase flip                                         |
+| **R(\theta)**    | $$ \begin{bmatrix} 1 & 0 \\ 0 & e^{i\theta} \end{bmatrix} $$           | Adds phase $\theta$                                |
 
 #### Applying Gates
 
