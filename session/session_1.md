@@ -186,18 +186,22 @@ This is a point on the **Bloch Sphere**, where:
 
 * The state \$|+\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)\$ corresponds to a point on the equator (\$\theta = \pi/2\$, \$\phi = 0\$).
 
+Here's the corrected and properly formatted version:
+
+---
+
 ### Quantum Gates: Logic in the Quantum Realm
 
 Quantum computation proceeds by applying **quantum gates**—unitary operations (matrices $U$ where $U^\dagger U = I$)—to qubits.
 
 #### **1-Qubit Gates (on the Bloch Sphere)**
 
-| Gate             | Matrix                                                             | Effect                |                          |            |
-| ---------------- | ------------------------------------------------------------------ | --------------------- | ------------------------ | ---------- |
-| **X** (NOT)      | $\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$                     | Bit flip: (           | 0\rangle \leftrightarrow | 1\rangle ) |
-| **H** (Hadamard) | $\frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}$ | Creates superposition |                          |            |
-| **Z**            | $\begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}$                    | Phase flip            |                          |            |
-| **R(θ)**         | $\begin{bmatrix} 1 & 0 \\ 0 & e^{i\theta} \end{bmatrix}$           | Adds phase $\theta$   |                          |            |
+| Gate             | Matrix                                                             | Effect                                          |
+| ---------------- | ------------------------------------------------------------------ | ----------------------------------------------- | 
+| **X** (NOT)      | $\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$                     | Bit flip: ( 0\rangle \leftrightarrow 1\rangle ) |
+| **H** (Hadamard) | $\frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}$ | Creates superposition                           | 
+| **Z**            | $\begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}$                    | Phase flip                                      |
+| **R(θ)**         | $\begin{bmatrix} 1 & 0 \\ 0 & e^{i\theta} \end{bmatrix}$           | Adds phase $\theta$                             |  
 
 #### **Applying Gates**
 
@@ -214,6 +218,7 @@ Quantum computation proceeds by applying **quantum gates**—unitary operations 
   $$
 
 These quantum gates manipulate qubit states in ways analogous to classical logic gates—but operate using **complex amplitudes** and **phases**, enabling phenomena like **superposition** and **entanglement**.
+
 
 ### Multiple Qubits: Entanglement and the Tensor Product
 
