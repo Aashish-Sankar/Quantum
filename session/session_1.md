@@ -197,10 +197,10 @@ Quantum computation proceeds by applying **quantum gates**—unitary operations 
 
 | **Gate**         | **Matrix**                                                                 | **Effect**                                       |
 |------------------|------------------------------------------------------------------------------|--------------------------------------------------|
-| **X** (NOT)      | $\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$                | Bit flip: $\|0\rangle \rightarrow \|1\rangle$, $\|1\rangle \rightarrow \|0\rangle$      |
-| **H** (Hadamard) | $\frac{1}{\sqrt{2}}\begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}$ | Creates superposition: $\|0\rangle \rightarrow \frac{1}{\sqrt{2}}(\|0\rangle + \|1\rangle)$, $\|1\rangle \rightarrow \frac{1}{\sqrt{2}}(\|0\rangle - \|1\rangle)$                        |
-| **Z**            | $\begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}$               | Phase flip: $\|0\rangle \rightarrow \|0\rangle$, $\|1\rangle \rightarrow -\|1\rangle$                                       |
-| **R($\theta$)**  | $\begin{bmatrix} 1 & 0 \\ 0 & e^{i\theta} \end{bmatrix}$      | Adds phase $\theta$: $\|0\rangle \rightarrow \|0\rangle$, $\|1\rangle \rightarrow e^{i\theta}\|1\rangle$               |
+| **X** (NOT)      | $$\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$$                | Bit flip: $\|0\rangle \rightarrow \|1\rangle$, $\|1\rangle \rightarrow \|0\rangle$      |
+| **H** (Hadamard) | $$\frac{1}{\sqrt{2}}\begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}$$ | Creates superposition: $\|0\rangle \rightarrow \frac{1}{\sqrt{2}}(\|0\rangle + \|1\rangle)$, $\|1\rangle \rightarrow \frac{1}{\sqrt{2}}(\|0\rangle - \|1\rangle)$                        |
+| **Z**            | $$\begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}$$               | Phase flip: $\|0\rangle \rightarrow \|0\rangle$, $\|1\rangle \rightarrow -\|1\rangle$                                       |
+| **R($\theta$)**  | $$\begin{bmatrix} 1 & 0 \\ 0 & e^{i\theta} \end{bmatrix}$$      | Adds phase $\theta$: $\|0\rangle \rightarrow \|0\rangle$, $\|1\rangle \rightarrow e^{i\theta}\|1\rangle$               |
 
 #### Applying Gates
 
