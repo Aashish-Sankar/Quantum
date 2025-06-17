@@ -201,7 +201,7 @@ Quantum computation proceeds by applying **quantum gates**—unitary operations 
 | **X** (NOT)      | $\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$                | Bit flip: $\ket{0} \leftrightarrow \ket{1}$      |
 | **H** (Hadamard) | $\frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}$ | Creates superposition                        |
 | **Z**            | $\begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}$               | Phase flip                                       |
-| **R(\theta)**    | $\begin{bmatrix} 1 & 0 \\ 0 & e^{i\theta} \end{bmatrix}$      | Adds phase $\theta$                              |
+| **R($\theta$)**    | $\begin{bmatrix} 1 & 0 \\ 0 & e^{i\theta} \end{bmatrix}$      | Adds phase $\theta$                              |
 
 #### Applying Gates
 
