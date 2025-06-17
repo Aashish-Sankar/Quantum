@@ -3,7 +3,7 @@
 This guide delivers:
 1. A **brief historical overview** of the puzzles that led to quantum theory.  
 2. **Clear definitions** of the main keywords from **session_1.md**.  
-3. **Expanded, in-depth FAQs** addressing more questions a curious reader—even a kid—might ask.
+3. **Expanded, in-depth FAQs** addressing more questions a curious reader might ask.
 
 ---
 
@@ -238,13 +238,19 @@ Wave–particle duality is the concept that every quantum entity (light or matte
 - **Electrons**: Form diffraction patterns when passed through a crystal (wave behavior) but form single-point impacts on a detector (particle behavior).  
 De Broglie unified these observations, assigning a wavelength λ = h/p to any particle. The full quantum description treats entities as wavefunctions subject to both behaviors.
 
+---
+
 **Q17: How did the hydrogen spectrum inspire quantum ideas?**  
 **A17:**  
 Spectroscopists (Kirchhoff, Bunsen) in the 1860s saw hydrogen’s light break into discrete colors. Balmer (1885) found a simple formula for these lines. Bohr (1913) explained the formula by postulating electrons orbit only in quantized rings and emit photons when jumping between them. This was the first step toward quantization of atomic systems.
 
+---
+
 **Q18: Why was Planck’s 1900 “fudge” so revolutionary?**  
 **A18:**  
 Planck originally introduced quantization mathematically to fit experimental blackbody data—he called it a “desperate act of scientific cowardice.” But once the constant h appeared, it implied energy exchange is inherently discontinuous. This one insight cracked open the deterministic classical paradigm.
+
+---
 
 **Q19: What was Einstein’s 1905 “light quantum” paper?**  
 **A19:**  
@@ -253,27 +259,39 @@ Einstein suggested light’s energy is localized in particles (“light quanta�
 - Why brighter light means more emitted electrons but not more energetic ones.  
 His bold move extended quantization from matter vibrations (Planck) to the electromagnetic field itself.
 
+---
+
 **Q20: How does the Compton effect differ from the photoelectric effect?**  
 **A20:**  
 - **Photoelectric Effect**: Photon gives all its energy to an electron in a metal, ejecting it.  
 - **Compton Effect**: Photon scatters off a (nearly) free electron and loses part of its energy, emerging with a longer wavelength.  
 Compton’s 1923 experiment demonstrated conservation of both energy and momentum in photon–electron collisions, treating photons as particles with momentum p = h/λ.
 
+---
+
 **Q21: What was the Bohr–Sommerfeld model?**  
 **A21:**  
 An extension of Bohr’s original orbits (1913) by Sommerfeld (1916) introducing elliptical orbits and relativistic corrections to explain fine structure in spectral lines. It improved agreement with experiments but still lacked a wave description—resolved later by full wave mechanics.
+
+---
 
 **Q22: How did Heisenberg’s matrix mechanics come about?**  
 **A22:**  
 In 1925, Werner Heisenberg proposed a new framework: instead of tracking orbits, use arrays (matrices) to represent observable quantities like position and momentum. He discovered these matrices do not commute (XY ≠ YX), leading directly to the uncertainty principle. Matrix mechanics was the first complete quantum theory, though initially abstract without a clear picture of “waves.”
 
+---
+
 **Q23: How did Schrödinger’s wave mechanics emerge?**  
 **A23:**  
 In early 1926, Erwin Schrödinger formulated a differential equation (the Schrödinger equation) governing a complex wavefunction Ψ(x, t). His wave mechanics approach offered an intuitive picture—quantum particles as “matter waves.” Later, Born clarified Ψ’s probabilistic meaning, and Schrödinger showed both his and Heisenberg’s formalisms were mathematically equivalent.
 
+---
+
 **Q24: Why did Einstein dislike quantum randomness?**  
 **A24:**  
 Einstein believed in a deterministic universe. He couldn’t accept that fundamental events (like radioactive decay or particle positions) occur by pure chance. His phrase “God does not play dice” summarizes his discomfort. He and others searched for hidden-variable theories to restore determinism, but Bell’s theorem and experiments in the 1960s–70s ruled out local hidden variables.
+
+---
 
 **Q25: What are hidden-variable theories?**  
 **A25:**  
