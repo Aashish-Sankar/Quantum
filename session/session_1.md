@@ -40,9 +40,8 @@ Over the next few decades, quantum ideas blossomed, giving rise to a new, revolu
 
   Where $\Delta x$ is the uncertainty in position, $\Delta p$ is the uncertainty in momentum, and $\hbar$ is the reduced Planck's constant ($h/2\pi$). This means the more precisely you know a particle's position, the less precisely you can know its momentum, and vice versa. It's not a limitation of our instruments, but a fundamental feature of nature.
 
-  ![image](https://github.com/user-attachments/assets/2be5a118-35af-4e9a-a62f-995fc9b41494)
-
-  <div align="center"><em>Illustration of the Uncertainty Principle</em></div>
+<div align="center"> <img src="https://github.com/user-attachments/assets/2be5a118-35af-4e9a-a62f-995fc9b41494" alt="Uncertainty Principle" style="max-width: 400px; width: 100%; height: auto; margin: 1em 0;"> 
+<div><em>Illustration of the Uncertainty Principle</em></div> </div>
 
 * **Erwin Schrödinger** formulated wave mechanics, describing particles as wavefunctions evolving via his now-famous equation.
 
@@ -119,9 +118,8 @@ A qubit's state can be visualized on the **Bloch Sphere**, a unit sphere where:
 * The poles represent the classical states $|0\rangle$ and $|1\rangle$.
 * Any point on the surface corresponds to a valid qubit state.
 
-![Bloch Sphere](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bloch_sphere.svg/1920px-Bloch_sphere.svg.png)
-
-<div align="center"><em>The Bloch Sphere representation of a single qubit</em></div>
+<div align="center"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bloch_sphere.svg/1920px-Bloch_sphere.svg.png" alt="Bloch Sphere" style="max-width: 400px; width: 100%; height: auto; margin: 1em 0;"> 
+<div><em>The Bloch Sphere representation of a single qubit</em></div> </div>
 
 This visualization helps understand quantum operations—**quantum gates** like the Hadamard (H), Pauli-X/Y/Z, and rotation gates correspond to rotations around axes of the sphere.
 
