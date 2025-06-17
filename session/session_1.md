@@ -31,8 +31,21 @@ Quantum theory was born.
 Over the next few decades, quantum ideas blossomed, giving rise to a new, revolutionary framework: **quantum mechanics**.
 
 * **Niels Bohr** proposed a model of the atom where electrons occupy discrete energy levels. His model explained the hydrogen spectrum but was limited.
+
 * **Werner Heisenberg** developed matrix mechanics, introducing the **Uncertainty Principle**: we cannot know both the position and momentum of a particle with absolute precision.
+
+  Mathematically, this is represented as:
+
+  $\Delta x \cdot \Delta p \geq \frac{\hbar}{2}$
+
+  Where $\Delta x$ is the uncertainty in position, $\Delta p$ is the uncertainty in momentum, and $\hbar$ is the reduced Planck's constant ($h/2\pi$). This means the more precisely you know a particle's position, the less precisely you can know its momentum, and vice versa. It's not a limitation of our instruments, but a fundamental feature of nature.
+
+  ![image](https://github.com/user-attachments/assets/2be5a118-35af-4e9a-a62f-995fc9b41494)
+
+  <div align="center"><em>Illustration of the Uncertainty Principle</em></div>
+
 * **Erwin Schrödinger** formulated wave mechanics, describing particles as wavefunctions evolving via his now-famous equation.
+
 * **Max Born** interpreted the wavefunction probabilistically: it doesn't tell us where a particle *is*, but where it *might be*.
 
 This probabilistic nature—so unlike the deterministic classical world—sparked fierce debates. **Einstein** famously objected: "God does not play dice with the universe." But experiments, including Bell's theorem and its later tests, confirmed quantum theory's nonlocal, probabilistic nature.
@@ -93,12 +106,39 @@ Quantum computers aren't just analogues of classical ones—they are more powerf
 * **Grover’s Algorithm (1996)**: Provides quadratic speedups for unstructured search problems.
 * **Quantum Simulation**: The original killer app. Quantum computers can efficiently simulate molecules, materials, and quantum fields.
 
-The building blocks of quantum computing include:
+### Understanding the Qubit
 
-* **Qubits**: Quantum bits that can be in superposition of 0 and 1.
-* **Quantum Gates**: Operations that manipulate qubits, analogous to classical logic gates but reversible and unitary.
-* **Measurement**: Observing a qubit collapses its state, yielding a classical outcome.
-* **Entanglement**: Qubits can be correlated in ways that classical bits cannot, enabling powerful parallelism.
+At the heart of quantum computing lies the **qubit**—a quantum bit. Unlike a classical bit which can be either 0 or 1, a qubit can exist in a **superposition** of both:
+
+$|ψ\rangle = α|0\rangle + β|1\rangle$
+
+Where $α$ and $β$ are complex numbers such that $|α|^2 + |β|^2 = 1$.
+
+A qubit's state can be visualized on the **Bloch Sphere**, a unit sphere where:
+
+* The poles represent the classical states $|0\rangle$ and $|1\rangle$.
+* Any point on the surface corresponds to a valid qubit state.
+
+![Bloch Sphere](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bloch_sphere.svg/1920px-Bloch_sphere.svg.png)
+
+<div align="center"><em>The Bloch Sphere representation of a single qubit</em></div>
+
+This visualization helps understand quantum operations—**quantum gates** like the Hadamard (H), Pauli-X/Y/Z, and rotation gates correspond to rotations around axes of the sphere.
+
+### Multiple Qubits and Entanglement
+
+With multiple qubits, things get exponentially more powerful—and weird. For two qubits, the system is described by four amplitudes. For three qubits, eight. In general, an $n$-qubit system has $2^n$ amplitudes.
+
+This exponential state space is what gives quantum computers their power. But it's also why they're hard to simulate.
+
+Key phenomena with multiple qubits:
+
+* **Entanglement**: Qubits can become correlated such that their individual states are undefined, but their joint state is well-defined.
+* **Tensor Product Structure**: The full state is built from tensor products of individual qubit states.
+
+Example: The Bell state $|Φ^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$ is maximally entangled. Measuring one qubit instantly determines the other's state.
+
+These entangled states enable **quantum teleportation**, **quantum key distribution**, and **quantum error correction**.
 
 ## Part V: A Universal Truth
 
