@@ -186,38 +186,34 @@ This is a point on the **Bloch Sphere**, where:
 
 * The state \$|+\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)\$ corresponds to a point on the equator (\$\theta = \pi/2\$, \$\phi = 0\$).
 
----
-
 ### Quantum Gates: Logic in the Quantum Realm
 
-Quantum computation proceeds by applying **quantum gates**—unitary operations (matrices \$U\$ where \$U^\dagger U = I\$)—to qubits.
+Quantum computation proceeds by applying **quantum gates**—unitary operations (matrices $U$ where $U^\dagger U = I$)—to qubits.
 
-#### 1-Qubit Gates (on Bloch Sphere):
+#### **1-Qubit Gates (on the Bloch Sphere)**
 
-| Gate             | Matrix                                                              | Effect                |                          |            |
-| ---------------- | ------------------------------------------------------------------- | --------------------- | ------------------------ | ---------- |
-| **X** (NOT)      | \$\begin{bmatrix} 0 & 1 \ 1 & 0 \end{bmatrix}\$                     | Flip: \$              | 0\rangle \leftrightarrow | 1\rangle\$ |
-| **H** (Hadamard) | \$\frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \ 1 & -1 \end{bmatrix}\$ | Creates superposition |                          |            |
-| **Z**            | \$\begin{bmatrix} 1 & 0 \ 0 & -1 \end{bmatrix}\$                    | Phase flip            |                          |            |
-| **R(θ)**         | \$\begin{bmatrix} 1 & 0 \ 0 & e^{iθ} \end{bmatrix}\$                | Adds phase            |                          |            |
+| Gate             | Matrix                                                             | Effect                |                          |            |
+| ---------------- | ------------------------------------------------------------------ | --------------------- | ------------------------ | ---------- |
+| **X** (NOT)      | $\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$                     | Bit flip: (           | 0\rangle \leftrightarrow | 1\rangle ) |
+| **H** (Hadamard) | $\frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}$ | Creates superposition |                          |            |
+| **Z**            | $\begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}$                    | Phase flip            |                          |            |
+| **R(θ)**         | $\begin{bmatrix} 1 & 0 \\ 0 & e^{i\theta} \end{bmatrix}$           | Adds phase $\theta$   |                          |            |
 
-#### Applying Gates:
+#### **Applying Gates**
 
-* Applying **H** to \$|0\rangle\$:
+* **Hadamard Gate on** $|0\rangle$:
 
   $$
   H|0\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle) = |+\rangle
   $$
 
-* Apply **X** to \$|1\rangle\$:
+* **X Gate on** $|1\rangle$:
 
   $$
   X|1\rangle = |0\rangle
   $$
 
-These gates manipulate qubit states like classical logic gates manipulate bits—but with complex amplitudes and phases.
-
----
+These quantum gates manipulate qubit states in ways analogous to classical logic gates—but operate using **complex amplitudes** and **phases**, enabling phenomena like **superposition** and **entanglement**.
 
 ### Multiple Qubits: Entanglement and the Tensor Product
 
@@ -249,8 +245,6 @@ $$
 
 This is entangled—measure one qubit, and you instantly know the other.
 
----
-
 ### Quantum Circuits: Composing Computation
 
 Quantum algorithms are built from **quantum circuits**, sequences of gates applied to qubits.
@@ -275,8 +269,6 @@ $$
 
 This simple circuit creates entanglement—a vital resource in quantum computation.
 
----
-
 ### Measurement: Probabilistic Output
 
 Quantum computation ends with **measurement**, collapsing the wavefunction.
@@ -294,8 +286,6 @@ The measurement outcome is:
 
 Once measured, the system irreversibly collapses to the observed state.
 
----
-
 ### Reversibility and Unitarity
 
 All quantum gates are **reversible**. Unlike classical gates (e.g., AND/OR), no information is lost.
@@ -307,40 +297,6 @@ Mathematically:
 
 Quantum computing is **information-preserving**—a crucial contrast with dissipative classical circuits.
 
----
-
-### A Note on Complexity Classes
-
-Quantum algorithms can solve problems in **BQP** (Bounded-error Quantum Polynomial time), a class that includes:
-
-* Some problems in **P** (like database search, with Grover’s)
-* Some problems believed to be outside **P** (like factoring, with Shor’s)
-
-It's not yet proven that BQP is strictly larger than P, but it is widely believed to be.
-
----
-
-### The Quantum Fourier Transform (QFT)
-
-A core subroutine in many quantum algorithms, especially Shor’s.
-
-Given a state:
-
-$$
-|x\rangle = |x_0 x_1 \dots x_{n-1}\rangle
-$$
-
-The QFT maps:
-
-$$
-|x\rangle \rightarrow \frac{1}{\sqrt{2^n}} \sum_{k=0}^{2^n-1} e^{2\pi i xk / 2^n} |k\rangle
-$$
-
-It’s like the classical DFT (Discrete Fourier Transform), but on a quantum superposition.
-
-QFT can be done with \$O(n^2)\$ gates—exponentially faster than the classical DFT for many inputs.
-
----
 
 ### Quantum Speedups: Why It Matters
 
